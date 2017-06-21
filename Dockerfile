@@ -1,4 +1,4 @@
-FROM alpine:edge
+FROM ubuntu
 RUN apk add --update py2-pip openssh-client
 COPY requirements.txt /usr/src/app/
 RUN pip install --no-cache-dir -r /usr/src/app/requirements.txt
